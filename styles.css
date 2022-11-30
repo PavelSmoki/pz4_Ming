@@ -5,16 +5,16 @@
 
 .container {
     margin: 0 auto;
-    width: 400px;
-    height: 400px;
-    border: 8px solid green;
+    width: 600px;
+    height: 600px;
+    border: 8px solid rgb(247, 230, 4);
 }
 
 .circle {
     position: absolute;
     width: 100px;
     height: 100px;
-    background-color: greenyellow;
+    background-color: red;
     border-radius: 50%;
     animation-name: move-circle;
     animation-duration: 3.5s;
@@ -56,15 +56,15 @@
     }
 
     25% {
-        transform: translateX(300%);
+        transform: translateX(500%);
     }
 
     50% {
-        transform: translateX(300%) translateY(300%);
+        transform: translateX(500%) translateY(500%);
     }
 
     75% {
-        transform: translateX(0) translateY(300%);
+        transform: translateX(0) translateY(500%);
     }
 
     100% {
