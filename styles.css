@@ -1,0 +1,73 @@
+/* Сделать гусеницу (тело состоит из 7 кругов),
+проползающую путь в виде квадрата против часовой стрелке. 
+Все круги двигаются с неодинаковой скоростью,
+наезжая друг на друга */
+
+.container {
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    border: 8px solid green;
+}
+
+.circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    animation-name: move-circle;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-play-state: running;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+.second{
+    animation-delay: 0.1s;
+}
+
+.third {
+    animation-delay: 0.2s;
+}
+
+.fouth{
+    animation-delay: 0.3s;
+}
+
+.fifth{
+    animation-delay: 0.4s;
+}
+
+.sixth{
+    animation-delay: 0.5s;
+}
+
+.seventh{
+    animation-delay: 0.6s;
+}
+
+@keyframes move-circle {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    25% {
+        transform: translateX(300%);
+    }
+
+    50% {
+        transform: translateX(300%) translateY(300%);
+    }
+
+    75% {
+        transform: translateX(0) translateY(300%);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
